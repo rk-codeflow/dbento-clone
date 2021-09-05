@@ -3,6 +3,10 @@
     --btn-color: #AF872F;
 }
 
+/************
+  Global
+  styles
+*************/
 *,
 *::after,
 *::before {
@@ -15,24 +19,78 @@ body {
     overflow-x: hidden;
 }
 
-
-.details-btn {
-    background: var(--btn-color);
-    color: #fff;
-    font-size: 1rem;
-    padding: .4rem 2rem;
-    font-family: 'Raleway', sans-serif;
-}
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+h1, h2, h3, h4,
+h5, h6, p {
+    margin: 0;
+}
+
+/************
+=============
+  CLASSES
+  TO BE USED
+===============
+*************/
 .ptb {
     padding: 5rem 0;
 }
+
+.details-btn {
+    background: var(--btn-color);
+    color: #fff;
+    font-size: 1rem;
+    padding: .6rem 2rem;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+}
+
+.banner-heading,
+.title {
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+.para {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.primary-title {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.primary-title::after {
+    content: url(/img/seperator.png);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+
+.sec-title {
+    
+}
+
+.tert-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec-para {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 55px 0 30px 0;
+
+}
+
 
 /************
   NAVIGATION
@@ -116,19 +174,13 @@ BANNER CSS
     text-align: center;
 }
 
-.banner-heading {
-    font-family: 'Kaisei Tokumin', serif;
-}
-
-.banner-para {
-    font-family: 'Raleway', sans-serif;
-}
 
 .arrow {
     background: #fff;
     width: 35px;
     z-index: 1;
     position: absolute;
+    cursor: pointer;
 }
 
 .arrow-prev {
@@ -139,4 +191,30 @@ BANNER CSS
 .arrow-next {
     right: 20px;
     top: 50%;
+}
+
+
+/************
+    FEATURE 
+    CSS
+*************/
+.features .para-holder {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.features .features-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.features .features-detail .features-text {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.features .features-detail .features-text  p {
+    margin: 20px 0;
+    font-weight: 500;
 }
