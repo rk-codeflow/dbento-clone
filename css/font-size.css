@@ -1,0 +1,28 @@
+
+/**********
+BELOW
+600px
+***********/
+
+html {
+    /* font-size: 62.5%; */
+}
+
+.banner-heading {
+   font-size: 3rem;
+   font-weight: 900;
+   text-transform: capitalize;
+}
+
+.banner-para {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+/**********
+ABOVE
+600px
+***********/
+/* html {
+    font-size: 67%;
+} */
